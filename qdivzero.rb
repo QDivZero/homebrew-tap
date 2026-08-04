@@ -5,21 +5,21 @@
 class Qdivzero < Formula
   desc "Command-line client for the QDivZero API"
   homepage "https://github.com/QDivZero/qdivzero-cli"
-  version "1.0.4"
+  version "1.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/QDivZero/qdivzero-cli/releases/download/v1.0.4/qdivzero_1.0.4_darwin_amd64.tar.gz"
-      sha256 "15c455c2bbf7906156c7781ba38aea40227dffe84005d94941c8737a00a495ca"
+      url "https://github.com/QDivZero/qdivzero-cli/releases/download/v1.0.5/qdivzero_1.0.5_darwin_amd64.tar.gz"
+      sha256 "7cabe3286405948f0c98c6b4c1e30037dc1ca9e01ede5bf3aab0d721edf6772b"
 
       define_method(:install) do
         bin.install "qdivzero"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/QDivZero/qdivzero-cli/releases/download/v1.0.4/qdivzero_1.0.4_darwin_arm64.tar.gz"
-      sha256 "bb14ee4cbacc94c211ae46f55434af7ae3345b2973a452f6cbeb2dae8f91c16e"
+      url "https://github.com/QDivZero/qdivzero-cli/releases/download/v1.0.5/qdivzero_1.0.5_darwin_arm64.tar.gz"
+      sha256 "bc547913defce87bd61e19043f6b723eb7cd22b64195511262e28919b10c9cfa"
 
       define_method(:install) do
         bin.install "qdivzero"
@@ -29,15 +29,15 @@ class Qdivzero < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/QDivZero/qdivzero-cli/releases/download/v1.0.4/qdivzero_1.0.4_linux_amd64.tar.gz"
-      sha256 "8c62f807a282da326e989342ca86061e6ced9c6e7a14b72e1e6cff975d3c3943"
+      url "https://github.com/QDivZero/qdivzero-cli/releases/download/v1.0.5/qdivzero_1.0.5_linux_amd64.tar.gz"
+      sha256 "a1f6b85db532209e7f187965b597ab2883d6f06e4c07167bade0bb7a03f3eb81"
       define_method(:install) do
         bin.install "qdivzero"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/QDivZero/qdivzero-cli/releases/download/v1.0.4/qdivzero_1.0.4_linux_arm64.tar.gz"
-      sha256 "a91cff5b273506d1f4bc95dc2d76e8598a07cd3b229f9ae1c4948700eb7863a6"
+      url "https://github.com/QDivZero/qdivzero-cli/releases/download/v1.0.5/qdivzero_1.0.5_linux_arm64.tar.gz"
+      sha256 "376959d2b15ce86047020ac9ea2a7dac9228fd53ac6d238a0b0473df9dca2715"
       define_method(:install) do
         bin.install "qdivzero"
       end
